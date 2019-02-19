@@ -6,8 +6,8 @@
         <!-- <a-scene arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3;'> -->
         <a-assets>
             <a-asset-item id="smiley" src="https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/9176d098/1.0/SmilingFace/glTF/SmilingFace.gltf"></a-asset-item>
-            <a-asset-item id="cantina" src="https://hjtamaral.github.io/ProjectoAR/models/gltf/cantina.gltf"></a-asset-item>
-            <a-asset-item id="teste" src="https://hjtamaral.github.io/ProjectoAR/models/teste2.dae"></a-asset-item>
+            <a-asset-item id="A1A2" src="https://hjtamaral.github.io/ProjectoAR/models/A1A2.dae"></a-asset-item>
+            <a-asset-item id="APIIIISETA" src="https://hjtamaral.github.io/ProjectoAR/models/APIIIISETA.dae.dae"></a-asset-item>
         </a-assets>
 
         <!-- handle marker with your own pattern -->
@@ -20,52 +20,75 @@
             <a-box position='0 0.5 0' material='color: blue;'></a-box>
         </a-marker>
 
-        <a-marker type='pattern' url='https://hjtamaral.github.io/ProjectoAR/marker/pattern-letterC.patt'>
+        <!-- <a-marker type='pattern' url='https://hjtamaral.github.io/ProjectoAR/marker/pattern-letterC.patt'>
+            <a-box position='0 0.5 0' material='color: green;'></a-box>
+        </a-marker> -->
+
+        <a-marker type='pattern' url='https://hjtamaral.github.io/ProjectoAR/marker/pattern-letterD.patt'>
             <a-box position='0 0.5 0' material='color: green;'></a-box>
         </a-marker>
 
-        <a-marker type='pattern' url='https://hjtamaral.github.io/ProjectoAR/marker/pattern-letterD.patt'>
-            <!-- <a-box position='0 0.5 0' material='color: yellow;'></a-box> -->
-            <a-entity collada-model="#teste" rotation="270 0 0" scale="3 3 3" material="color: blue"></a-entity>
-        </a-marker>
-
-        <!-- <a-marker type=' pattern ' url='https://hjtamaral.github.io/ProjectoAR/marker/pattern-letterE.patt '>
-            <a-box position='0 0.5 0 ' material='color: pink; '></a-box>
+        <!-- <a-marker type='pattern' url='https://hjtamaral.github.io/ProjectoAR/marker/pattern-letterE.patt'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
         </a-marker> -->
 
+        <!-- <a-marker type='pattern' url='https://hjtamaral.github.io/ProjectoAR/marker/pattern-letterF.patt'>
+            <a-box position='0 0.5 0' material='color: green;'></a-box>
+        </a-marker> -->
 
-        <!-- handle marker with hiro preset preset='hiro ' -->
-        <!-- <a-marker type='pattern ' url='https://hjtamaral.github.io/ProjectoAR/marker/pattern-letterA.patt '> -->
-        <!-- <a-entity gltf-model="#smiley" rotation="0 0 0"> -->
-        <!-- <a-animation attribute="position" dur="2000" direction="alternate" from="0 1 0" to="0 5 0" repeat="indefinite"></a-animation> -->
-        <!-- </a-entity> -->
-        <!-- <a-box position='0 0.5 0 ' material='color: green; '></a-box> -->
-        <!-- </a-marker> -->
+        <!-- handle marker with hiro preset -->
+        <a-marker preset='hiro'>
+            <a-box position='0 0.5 0' material='color: green;'></a-box>
+        </a-marker>
+
+        <a-marker preset='kanji'>
+            <a-box position='0 0.5 0' material='color: yellow;'></a-box>
+        </a-marker>
 
         <!-- handle barcode marker -->
 
-        <a-marker type='barcode ' value='0 '>
-            <a-box position='0 0.5 0 ' material='color: blue; '></a-box>
+        <a-marker type='barcode' value='0'>
+            <a-entity collada-model="#A1A2" rotation="0 0 0" scale="3 3 3"></a-entity>
         </a-marker>
 
-        <a-marker type='barcode ' value='1 '>
-            <a-box position='0 0.5 0 ' material='color: blue; '></a-box>
+        <!-- <a-marker type='barcode' value='1'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+        </a-marker> -->
+
+        <!-- <a-marker type='barcode' value='2'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+        </a-marker> -->
+
+        <a-marker type='barcode' value='3'>
+            <a-entity collada-model="#APIIIISETA" rotation="0 0 0" scale="3 3 3"></a-entity>
         </a-marker>
 
-        <a-marker type='barcode ' value='2 '>
-            <a-box position='0 0.5 0 ' material='color: blue; '></a-box>
+        <a-marker type='barcode' value='4'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
         </a-marker>
 
-        <a-marker type='barcode ' value='3 '>
-            <a-box position='0 0.5 0 ' material='color: blue; '></a-box>
+        <!-- <a-marker type='barcode' value='5'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+        </a-marker> -->
+
+        <a-marker type='barcode' value='6'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
         </a-marker>
 
-        <a-marker type='barcode ' value='4 '>
-            <a-box position='0 0.5 0 ' material='color: blue; '></a-box>
+        <!-- <a-marker type='barcode' value='7'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+        </a-marker> -->
+
+        <!-- <a-marker type='barcode' value='8'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+        </a-marker> -->
+
+        <a-marker type='barcode' value='9'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
         </a-marker>
 
-        <a-marker type='barcode ' value='5 '>
-            <a-box position='0 0.5 0 ' material='color: blue; '></a-box>
+        <a-marker type='barcode' value='10'>
+            <a-box position='0 0.5 0' material='color: blue;'></a-box>
         </a-marker>
 
         <!-- add a simple camera -->
