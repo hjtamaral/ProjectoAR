@@ -7,7 +7,11 @@
         <a-assets>
             <a-asset-item id="smiley" src="https://cdn.rawgit.com/KhronosGroup/glTF-Sample-Models/9176d098/1.0/SmilingFace/glTF/SmilingFace.gltf"></a-asset-item>
             <a-asset-item id="A1A2" src="https://hjtamaral.github.io/ProjectoAR/models/A1A2.dae"></a-asset-item>
-            <a-asset-item id="APIIIISETA" src="https://hjtamaral.github.io/ProjectoAR/models/APIIIISETA.dae.dae"></a-asset-item>
+            <a-asset-item id="APIIIISETA" src="https://hjtamaral.github.io/ProjectoAR/models/APIIIISETA.dae"></a-asset-item>
+            <a-asset-item id="CANTINA" src="https://hjtamaral.github.io/ProjectoAR/models/CANTINA.dae"></a-asset-item>
+            <a-asset-item id="LABORATORIOS" src="https://hjtamaral.github.io/ProjectoAR/models/LABORATORIOS.dae"></a-asset-item>
+            <a-asset-item id="SETA-CANTINA-AA12" src="https://hjtamaral.github.io/ProjectoAR/models/SETA-CANTINA-AA12.dae"></a-asset-item>
+            <a-asset-item id="SETA-LABORATORIOS-REPROGRAFIA" src="https://hjtamaral.github.io/ProjectoAR/models/SETA-LABORATORIOS-REPROGRAFIA.dae"></a-asset-item>
         </a-assets>
 
         <!-- handle marker with your own pattern -->
@@ -48,7 +52,7 @@
         <!-- handle barcode marker -->
 
         <a-marker type='barcode' value='0'>
-            <a-entity collada-model="#A1A2" rotation="0 0 0" scale="3 3 3"></a-entity>
+            <a-entity collada-model="#A1A2" rotation="270 0 0" scale="3 3 3"></a-entity>
         </a-marker>
 
         <!-- <a-marker type='barcode' value='1'>
@@ -60,11 +64,11 @@
         </a-marker> -->
 
         <a-marker type='barcode' value='3'>
-            <a-entity collada-model="#APIIIISETA" rotation="0 0 0" scale="3 3 3"></a-entity>
+            <a-entity collada-model="#APIIIISETA" rotation="0 0 0" scale="1 1 1"></a-entity>
         </a-marker>
 
         <a-marker type='barcode' value='4'>
-            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+            <a-entity collada-model="#CANTINA" rotation="270 0 0" scale="3 3 3"></a-entity>
         </a-marker>
 
         <!-- <a-marker type='barcode' value='5'>
@@ -72,7 +76,7 @@
         </a-marker> -->
 
         <a-marker type='barcode' value='6'>
-            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+            <a-entity collada-model="#LABORATORIOS" rotation="270 0 0" scale="3 3 3"></a-entity>
         </a-marker>
 
         <!-- <a-marker type='barcode' value='7'>
@@ -84,11 +88,11 @@
         </a-marker> -->
 
         <a-marker type='barcode' value='9'>
-            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+            <a-entity collada-model="#SETA-CANTINA-AA12" rotation="0 0 0" scale="1 1 1"></a-entity>
         </a-marker>
 
         <a-marker type='barcode' value='10'>
-            <a-box position='0 0.5 0' material='color: blue;'></a-box>
+            <a-entity collada-model="#SETA-LABORATORIOS-REPROGRAFIA" rotation="0 0 0" scale="1 1 1"></a-entity>
         </a-marker>
 
         <!-- add a simple camera -->
